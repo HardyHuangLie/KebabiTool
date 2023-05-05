@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><trustInfo xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"><security><applicationRequestMinimum><PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" /><defaultAssemblyRequest permissionSetReference="Custom" /></applicationRequestMinimum><requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3"><!-- UAC 資訊清單選項
+             如果要變更 Windows 使用者帳戶控制層級，請將 
+             requestedExecutionLevel 節點以下列其中之一取代。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 項目會停用檔案及登錄虛擬化。
+            如果您的應用程式需要針對回溯相容性進行這項虛擬化，請移除這個
+            項目。
+        --><requestedExecutionLevel level="requireAdministrator" uiAccess="false" /></requestedPrivileges></security></trustInfo>

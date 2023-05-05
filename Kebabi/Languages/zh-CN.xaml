@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="CreatShortCut">创建桌面快捷方式</sys:String>
+    <sys:String x:Key="Start">开始游戏</sys:String>
+    <sys:String x:Key="Null">无</sys:String>
+    <sys:String x:Key="FailMsg1">打开 GenshinImpact 程序失败，请勾选关闭 mhyprot.dll</sys:String>
+    <sys:String x:Key="FailMsg2">修改失败，无法写入内存</sys:String>
+    <sys:String x:Key="Close">关闭游戏</sys:String>
+    <sys:String x:Key="FailMsg3">创建快捷方式失败</sys:String>
+</ResourceDictionary>

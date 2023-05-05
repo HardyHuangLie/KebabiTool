@@ -1,0 +1,16 @@
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\bin\Debug\Kebabi.exe.config
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\bin\Debug\Kebabi.exe
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\bin\Debug\Kebabi.pdb
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.csproj.AssemblyReference.cache
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\MainWindow.g.cs
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\App.g.cs
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi_MarkupCompile.cache
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi_MarkupCompile.lref
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\MainWindow.baml
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.g.resources
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.Properties.Resources.resources
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.csproj.GenerateResource.cache
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.csproj.CoreCompileInputs.cache
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.exe
+C:\Users\Hardy\OneDrive\桌面\Visual studio\Kebabi\Kebabi\obj\Debug\Kebabi.pdb

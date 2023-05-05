@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kebabi", "Kebabi\Kebabi.csproj", "{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Debug|x64.ActiveCfg = Release|x64
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Debug|x64.Build.0 = Release|x64
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Release|x64.ActiveCfg = Release|x64
+		{0CCBF49C-9AF8-414D-8F25-6FAF4D37696C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A39623AF-CDF5-4308-94D2-E43B7653FD9C}
+	EndGlobalSection
+EndGlobal

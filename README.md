@@ -20,3 +20,14 @@ Instructions:
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%202.png)  
 4. Run Kebabi.exe.  
 5. Enjoy!
+
+自动开启游戏并移除Kebabi浮水印  
+使用步骤:   
+1. 下载
+[dowload](https://github.com/HardyHuangLie/KebabiTool/blob/main/Downloads/KebabiTool.zip)
+2. 开启Kebabi(injector.exe)并选择游戏路径
+![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%201.png)  
+3. 关闭游戏将Kebabi.exe,Memory.dll,Newtonsoft.Json.dll拖入Kebabi资料夹中  
+![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%202.png)   
+4. 运行Kebabi.exe  
+5. Enjoy!

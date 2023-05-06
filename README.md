@@ -12,7 +12,7 @@
 4. 執行Kebabi.exe  
 5. Enjoy!
 
-# Engilsh
+## Engilsh
 Automatically Launch the Game and Remove Kebabi Watermark  
 Instructions:  
 1. DownloadOpen 
@@ -24,7 +24,7 @@ Instructions:
 4. Run Kebabi.exe.  
 5. Enjoy!
 
-# 简体中文
+## 简体中文
 自动开启游戏并移除Kebabi浮水印  
 使用步骤:   
 1. 下载

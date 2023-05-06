@@ -3,7 +3,7 @@
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Ex.png)  
   
 ## 繁體中文
-自動開啟遊戲並移除Kebabi浮水印  
+自動開啟遊戲並移除Kebabi浮水印 支援簡體中文、繁體中文、英文、俄文和日文  
 使用步驟:  
 1. 下載
 [dowload](https://github.com/HardyHuangLie/KebabiTool/blob/main/Downloads)
@@ -15,7 +15,7 @@
 5. Enjoy!
 
 ## Engilsh
-Automatically Launch the Game and Remove Kebabi Watermark  
+Automatically Launch the Game and Remove Kebabi Watermark. Support Simplified Chinese, Traditional Chinese, English, Russian, and Japanese.  
 Instructions:  
 1. DownloadOpen 
 [dowload](https://github.com/HardyHuangLie/KebabiTool/blob/main/Downloads)
@@ -27,7 +27,7 @@ Instructions:
 5. Enjoy!
 
 ## 简体中文
-自动开启游戏并移除Kebabi浮水印  
+自动开启游戏并移除Kebabi浮水印 支持简体中文、繁体中文、英文、俄文和日文  
 使用步骤:   
 1. 下载
 [dowload](https://github.com/HardyHuangLie/KebabiTool/blob/main/Downloads)

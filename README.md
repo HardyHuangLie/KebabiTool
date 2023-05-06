@@ -1,5 +1,7 @@
 # KebabiTool
-
+  
+![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Ex.png)  
+  
 ## 繁體中文
 自動開啟遊戲並移除Kebabi浮水印  
 使用步驟:  

@@ -52,7 +52,6 @@ namespace Kebabi
             Sixth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
 
         private async void Start_Click(object sender, RoutedEventArgs e)
@@ -95,7 +94,6 @@ namespace Kebabi
             Sixth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
 
         private void Forth_Checked(object sender, RoutedEventArgs e)
@@ -109,7 +107,6 @@ namespace Kebabi
             Sixth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
 
         private void Third_Checked(object sender, RoutedEventArgs e)
@@ -123,7 +120,6 @@ namespace Kebabi
             Sixth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
 
         private void Second_Checked(object sender, RoutedEventArgs e)
@@ -137,7 +133,6 @@ namespace Kebabi
             Sixth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
 
         private void Fifth_Checked(object sender, RoutedEventArgs e)
@@ -151,7 +146,6 @@ namespace Kebabi
             Forth.IsChecked = false;
             Sixth.IsChecked = false;
             Change();
-            Save();
         }
 
         private void Sixth_Checked(object sender, RoutedEventArgs e)
@@ -165,7 +159,6 @@ namespace Kebabi
             Forth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
 
         private void Zero_Checked(object sender, RoutedEventArgs e)
@@ -179,10 +172,10 @@ namespace Kebabi
             Sixth.IsChecked = false;
             Fifth.IsChecked = false;
             Change();
-            Save();
         }
         void Change()
         {
+            Save();
             if (is_Run)
             {
                 if (Remove_all == 0)
@@ -295,6 +288,7 @@ namespace Kebabi
         class Data
         {
             public int id { get; set; }
+            public bool closeprotect { get; set; }
         }
         public void ReadJson()
         {
@@ -302,6 +296,7 @@ namespace Kebabi
             Create_ini();
             string read = File.ReadAllText(Path);
             data = JsonConvert.DeserializeObject<Data>(read);
+            Close_Protect.IsChecked = data.closeprotect;
             switch (data.id)
             {
                 case 0: Zero.IsChecked= true; break;
@@ -327,8 +322,11 @@ namespace Kebabi
         {
             string filePath = "cfg.ini";
             string line = null;
-
-            using (StreamReader reader = new StreamReader(filePath))
+            if (!File.Exists(filePath))
+            {
+                return 15000;
+            }
+           using (StreamReader reader = new StreamReader(filePath))
             {
                 int delayMS = 15000;
                 while ((line = reader.ReadLine()) != null)
@@ -352,7 +350,8 @@ namespace Kebabi
             }
             var Json = new Data
             {
-                id = Remove_all
+                id = Remove_all,
+                closeprotect = Close_Protect.IsChecked ?? false
             };
             string jsonString = JsonConvert.SerializeObject(Json);
             File.WriteAllText(Path, jsonString);
@@ -383,6 +382,111 @@ namespace Kebabi
 
                 // 退出當前應用程式
                 Application.Current.Shutdown();
+            }
+        }
+
+        private void Close_Protect_Checked(object sender, RoutedEventArgs e)
+        {
+            Save();
+            try
+            {
+                string filePath = "cfg.ini";
+                string line = null;
+                string GenshinPath = null;
+                if (!File.Exists(filePath))
+                {
+                    MessageBox.Show(filePath + resources.FailMsg4);
+                    return;
+                }
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        if (line.StartsWith("GenshinPath"))
+                        {
+                            string[] parts = line.Split('=');
+                            GenshinPath = parts[1].Trim();
+                            break;
+                        }
+                    }
+                }
+                if (!File.Exists(GenshinPath))
+                {
+                    MessageBox.Show(filePath + resources.FailMsg5);
+                    return;
+                }
+                if (GenshinPath != null)
+                {
+                    string path = System.IO.Path.GetDirectoryName(GenshinPath);
+                    if (File.Exists(System.IO.Path.Combine(path ,"mhyprot3.Sys")))
+                    {
+                        File.Move(System.IO.Path.Combine(path , "mhyprot3.Sys"), System.IO.Path.Combine(path ,"mhyprot3.bak"));
+                    }
+                    if (File.Exists(System.IO.Path.Combine(path,"mhypbase.dll")))
+                    {
+                        File.Move(System.IO.Path.Combine(path, "mhypbase.dll"), System.IO.Path.Combine(path , "mhypbase.bak"));
+                    }
+                    if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.Sys")))
+                    {
+                        File.Move(System.IO.Path.Combine(path, "HoYoKProtect.Sys"), System.IO.Path.Combine(path, "HoYoKProtect.bak"));
+                    }
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Close_Protect_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Save();
+            try
+            {
+                string filePath = "cfg.ini";
+                string line = null;
+                string GenshinPath = null;
+                if (!File.Exists(filePath))
+                {
+                    MessageBox.Show(filePath + resources.FailMsg4);
+                    return;
+                }
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        if (line.StartsWith("GenshinPath"))
+                        {
+                            string[] parts = line.Split('=');
+                            GenshinPath = parts[1].Trim();
+                            break;
+                        }
+                    }
+                }
+                if (!File.Exists(GenshinPath))
+                {
+                    MessageBox.Show(filePath + resources.FailMsg5);
+                    return;
+                }
+                if (GenshinPath != null)
+                {
+                    string path = System.IO.Path.GetDirectoryName(GenshinPath);
+                    if (File.Exists(System.IO.Path.Combine(path, "mhyprot3.bak")))
+                    {
+                        File.Move(System.IO.Path.Combine(path, "mhyprot3.bak"), System.IO.Path.Combine(path, "mhyprot3.Sys"));
+                    }
+                    if (File.Exists(System.IO.Path.Combine(path, "mhypbase.bak")))
+                    {
+                        File.Move(System.IO.Path.Combine(path, "mhypbase.bak"), System.IO.Path.Combine(path, "mhypbase.dll"));
+                    }
+                    if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.bak")))
+                    {
+                        File.Move(System.IO.Path.Combine(path, "HoYoKProtect.bak"), System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

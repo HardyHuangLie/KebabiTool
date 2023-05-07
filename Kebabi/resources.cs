@@ -14,5 +14,8 @@ namespace Kebabi
         public static string FailMsg2 = Application.Current.Resources["FailMsg2"].ToString();
         public static string Close = Application.Current.Resources["Close"].ToString();
         public static string FailMsg3 = Application.Current.Resources["FailMsg3"].ToString();
+        public static string FailMsg4 = Application.Current.Resources["FailMsg4"].ToString();
+        public static string FailMsg5 = Application.Current.Resources["FailMsg5"].ToString();
+
     }
 }

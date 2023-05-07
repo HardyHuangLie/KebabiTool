@@ -26,7 +26,7 @@ namespace Kebabi
             try
             {
                 langRd = Application.LoadComponent(
-                new Uri(@"Languages\" +currentCultureInfo.Name+ ".xaml ", UriKind.Relative)) as ResourceDictionary;
+                new Uri(@"Languages\" + currentCultureInfo.Name+ ".xaml ", UriKind.Relative)) as ResourceDictionary;
             }
             catch
             {

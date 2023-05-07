@@ -242,6 +242,8 @@
         <Rectangle Stroke="Black" RadiusX="15" RadiusY="15" Margin="40,61,40,0" Height="283" VerticalAlignment="Top"/>
         <Button x:Name="Start" Style="{DynamicResource ButtonStyle1}" Content="{DynamicResource Start}" Height="45" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="24" Margin="0,360,0,0" FontFamily="Segoe UI" FontWeight="Bold" BorderBrush="Black" BorderThickness="0,0,0,0" HorizontalAlignment="Center" Padding="20,0,20,0" Click="Start_Click"/>
         <CheckBox x:Name="CreatShortCut" Style="{DynamicResource CheckBoxStyle1}" FontSize="18" Margin="0,30,51,0" HorizontalAlignment="Right" VerticalAlignment="Top" IsChecked="False" FontFamily="Segoe UI" Checked="CreatShortCut_Checked" Unchecked="CreatShortCut_Unchecked" Content="{DynamicResource CreatShortCut}"/>
+        <CheckBox x:Name="Close_Protect" Style="{DynamicResource CheckBoxStyle1}" FontSize="18" Margin="54,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="False" FontFamily="Segoe UI" Checked="Close_Protect_Checked" Unchecked="Close_Protect_Unchecked" Content="{DynamicResource CloseProtect}"/>
+        <Label Content="Designed by めぐたん#8475" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Segoe UI" Height="24"/>
 
     </Grid>
 </Window>

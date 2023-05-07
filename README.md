@@ -17,7 +17,7 @@
 ## Engilsh
 Automatically Launch the Game and Remove Kebabi Watermark. Support Simplified Chinese, Traditional Chinese, English, Russian, and Japanese.  
 Instructions:  
-1. DownloadOpen 
+1. Download
 [dowload](https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.1/KebabiTool.zip)
 2. Kebabi (injector.exe) and select the game path.
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%201.png)  

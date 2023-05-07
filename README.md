@@ -1,6 +1,6 @@
 # KebabiTool
 
-[![IMAGE ALT TEXT](https://github.com/HardyHuangLie/KebabiTool/blob/main/Ex.mp4)  
+![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Ex.gif)  
   
 ## 繁體中文
 自動開啟遊戲並移除Kebabi浮水印 支援簡體中文、繁體中文、英文、俄文和日文  

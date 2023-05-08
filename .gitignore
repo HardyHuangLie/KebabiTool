@@ -1,0 +1,8 @@
+# Ignore all files in Kebabi/obj directory
+Kebabi/obj/*
+
+# Except for exe and dll files in x64/Release and Debug directories
+!Kebabi/obj/x64/Release/*.exe
+!Kebabi/obj/x64/Release/*.dll
+!Kebabi/obj/Debug/*.exe
+!Kebabi/obj/Debug/*.dll

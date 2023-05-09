@@ -96,3 +96,4 @@ C:\Users\Hardy\OneDrive\桌面\Code\Visual studio\Kebabi\Kebabi\obj\x64\Release\
 C:\Users\Hardy\OneDrive\桌面\Code\Visual studio\Kebabi\Kebabi\obj\x64\Release\Languages\ru.baml
 C:\Users\Hardy\OneDrive\桌面\Code\Visual studio\Kebabi\Kebabi\obj\x64\Release\Kebabi.csproj.Fody.CopyLocal.cache
 C:\Users\Hardy\OneDrive\桌面\Code\Visual studio\Kebabi\Kebabi\obj\x64\Release\Kebabi.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\Hardy\OneDrive\桌面\Code\Visual studio\Kebabi\Kebabi\obj\x64\Release\Languages\pt-PT.baml

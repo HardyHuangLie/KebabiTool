@@ -217,12 +217,14 @@ namespace Kebabi
                     this.Dispatcher.Invoke((Action)(() =>
                     {
                         Start.Content = resources.Close;
+                        Close_Protect.IsEnabled= false;
                         is_Run = true;
                     }));
                     Get_Window_Close();
                     this.Dispatcher.Invoke((Action)(() =>
                     {
                         Start.Content = resources.Start;
+                        Close_Protect.IsEnabled = true;
                         is_Run = false;
                     }));
                 }
@@ -421,14 +423,17 @@ namespace Kebabi
                     if (File.Exists(System.IO.Path.Combine(path ,"mhyprot3.Sys")))
                     {
                         File.Move(System.IO.Path.Combine(path , "mhyprot3.Sys"), System.IO.Path.Combine(path ,"mhyprot3.bak"));
+                        File.Delete(System.IO.Path.Combine(path, "mhyprot3.Sys"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path,"mhypbase.dll")))
                     {
                         File.Move(System.IO.Path.Combine(path, "mhypbase.dll"), System.IO.Path.Combine(path , "mhypbase.bak"));
+                        File.Delete(System.IO.Path.Combine(path, "mhypbase.dll"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.Sys")))
                     {
                         File.Move(System.IO.Path.Combine(path, "HoYoKProtect.Sys"), System.IO.Path.Combine(path, "HoYoKProtect.bak"));
+                        File.Delete(System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
                     }
                 }
             }catch(Exception ex)
@@ -473,14 +478,17 @@ namespace Kebabi
                     if (File.Exists(System.IO.Path.Combine(path, "mhyprot3.bak")))
                     {
                         File.Move(System.IO.Path.Combine(path, "mhyprot3.bak"), System.IO.Path.Combine(path, "mhyprot3.Sys"));
+                        File.Delete(System.IO.Path.Combine(path, "mhyprot3.bak"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path, "mhypbase.bak")))
                     {
                         File.Move(System.IO.Path.Combine(path, "mhypbase.bak"), System.IO.Path.Combine(path, "mhypbase.dll"));
+                        File.Delete(System.IO.Path.Combine(path, "mhypbase.bak"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.bak")))
                     {
                         File.Move(System.IO.Path.Combine(path, "HoYoKProtect.bak"), System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
+                        File.Delete(System.IO.Path.Combine(path, "HoYoKProtect.bak"));
                     }
                 }
             }

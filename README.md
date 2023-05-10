@@ -3,9 +3,6 @@
 
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Ex.gif)  
  
-## Download
-[V1.0.5](https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/KebabiTool.zip)  
- 
 ## 繁體中文
 自動開啟遊戲並移除Kebabi浮水印 支援簡體中文、繁體中文、英文、俄文、葡萄牙文和日文  
 使用步驟:  
@@ -32,7 +29,6 @@ Instructions:
 自动开启游戏并移除Kebabi浮水印 支持简体中文、繁体中文、英文、俄文、葡萄牙文和日文  
 使用步骤:   
 1. [下载](https://github.com/HardyHuangLie/KebabiTool#download)  
-[V1.0.5](https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/KebabiTool.zip)
 2. 开启Kebabi(injector.exe)并选择游戏路径
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%201.png)  
 3. 关闭游戏将Kebabi.exe拖入Kebabi资料夹中  
@@ -73,3 +69,5 @@ Passos para uso:
 4. Execute Kebabi.exe  
 5. Aproveite!  
 
+## Download
+[V1.0.5](https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/KebabiTool.zip)  

@@ -38,3 +38,40 @@ Instructions:
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%202.png)   
 4. 运行Kebabi.exe  
 5. Enjoy!
+
+## 日本
+ゲームを自動的に開始し、 Kebabiウォーターマークを削除します簡体字中国語、繁体字中国語、英語、ロシア語、ポルトガル語、日本語をサポート  
+使用手順:  
+1.ダウンロード
+[V1.0.5]( https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/KebabiTool.zip )  
+2. Kebabi (injector.exe)を開き、ゲームのパスを選択します
+![image]( https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%201.png )  
+3.ゲームを終了し、Kebabi.exe をKebabiフォルダーにドラッグします。  
+![image]( https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%202.png )  
+4.Kebabi.exeを実行します。  
+5.楽しんでください！  
+
+## Русский
+Автоматический запуск игры и удаление водяного знака Kebabi. Поддержка упрощенного китайского, традиционного китайского, английского, русского, португальского и японского языков.  
+Шаги для использования:  
+1. Скачать
+[V1.0.5]( https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/KebabiTool.zip )  
+2. Откройте Kebabi (injector.exe) и выберите путь к игре
+![image]( https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%201.png )  
+3. Закройте игру и перетащите Kebabi.exe в папку Kebabi .  
+![image]( https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%202.png )  
+4. Запустите Kebabi.exe  
+5. Наслаждайтесь!  
+
+## Português
+Iniciar automaticamente o jogo e remover a marca d'água Kebabi Suporte chinês simplificado, chinês tradicional, inglês, russo, português e japonês  
+Passos para uso:  
+1. Baixar
+[ V1.0.5 ]( https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/KebabiTool.zip )  
+2. Abra o Kebabi (injector.exe) e selecione o caminho do jogo
+![ imagem ]( https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%201.png )  
+3. Feche o jogo e arraste Kebabi.exe para a pasta Kebabi  
+![ imagem ]( https://github.com/HardyHuangLie/KebabiTool/blob/main/Step%202.png )  
+4. Execute Kebabi.exe  
+5. Aproveite!  
+

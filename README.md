@@ -1,5 +1,5 @@
 # KebabiTool  
-[繁體中文](https://github.com/HardyHuangLie/KebabiTool#%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87) | [Eglish](https://github.com/HardyHuangLie/KebabiTool#engilsh) | [简体中文](https://github.com/HardyHuangLie/KebabiTool#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)  
+[繁體中文](https://github.com/HardyHuangLie/KebabiTool#%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87) | [Eglish](https://github.com/HardyHuangLie/KebabiTool#engilsh) | [简体中文](https://github.com/HardyHuangLie/KebabiTool#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87) | [日本](https://github.com/HardyHuangLie/KebabiTool#%E6%97%A5%E6%9C%AC) | [Русский](https://github.com/HardyHuangLie/KebabiTool#%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) | [Português](https://github.com/HardyHuangLie/KebabiTool#portugu%C3%AAs)  
 
 ![image](https://github.com/HardyHuangLie/KebabiTool/blob/main/Ex.gif)  
   

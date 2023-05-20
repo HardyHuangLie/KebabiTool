@@ -70,5 +70,5 @@ Passos para uso:
 5. Aproveite!  
 
 # Download
-[__V1.0.5__](https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/Kebabi.exe)  
-[__V2.0.1__](https://github.com/HardyHuangLie/KebabiTool/releases/download/V2.0.1/Kebabi.Tool.exe)  
+[__V1.0.5__](https://github.com/HardyHuangLie/KebabiTool/releases/download/V1.0.5/Kebabi.exe) 
+ New[__V2.0.1__](https://github.com/HardyHuangLie/KebabiTool/releases/download/V2.0.1/Kebabi.Tool.exe)  

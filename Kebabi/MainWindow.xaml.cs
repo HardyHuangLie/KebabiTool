@@ -217,12 +217,14 @@ namespace Kebabi
                     this.Dispatcher.Invoke((Action)(() =>
                     {
                         Start.Content = resources.Close;
+                        Close_Protect.IsEnabled= false;
                         is_Run = true;
                     }));
                     Get_Window_Close();
                     this.Dispatcher.Invoke((Action)(() =>
                     {
                         Start.Content = resources.Start;
+                        Close_Protect.IsEnabled = true;
                         is_Run = false;
                     }));
                 }
@@ -421,14 +423,17 @@ namespace Kebabi
                     if (File.Exists(System.IO.Path.Combine(path ,"mhyprot3.Sys")))
                     {
                         File.Move(System.IO.Path.Combine(path , "mhyprot3.Sys"), System.IO.Path.Combine(path ,"mhyprot3.bak"));
+                        File.Delete(System.IO.Path.Combine(path, "mhyprot3.Sys"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path,"mhypbase.dll")))
                     {
                         File.Move(System.IO.Path.Combine(path, "mhypbase.dll"), System.IO.Path.Combine(path , "mhypbase.bak"));
+                        File.Delete(System.IO.Path.Combine(path, "mhypbase.dll"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.Sys")))
                     {
                         File.Move(System.IO.Path.Combine(path, "HoYoKProtect.Sys"), System.IO.Path.Combine(path, "HoYoKProtect.bak"));
+                        File.Delete(System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
                     }
                 }
             }catch(Exception ex)
@@ -473,17 +478,71 @@ namespace Kebabi
                     if (File.Exists(System.IO.Path.Combine(path, "mhyprot3.bak")))
                     {
                         File.Move(System.IO.Path.Combine(path, "mhyprot3.bak"), System.IO.Path.Combine(path, "mhyprot3.Sys"));
+                        File.Delete(System.IO.Path.Combine(path, "mhyprot3.bak"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path, "mhypbase.bak")))
                     {
                         File.Move(System.IO.Path.Combine(path, "mhypbase.bak"), System.IO.Path.Combine(path, "mhypbase.dll"));
+                        File.Delete(System.IO.Path.Combine(path, "mhypbase.bak"));
                     }
                     if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.bak")))
                     {
                         File.Move(System.IO.Path.Combine(path, "HoYoKProtect.bak"), System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
+                        File.Delete(System.IO.Path.Combine(path, "HoYoKProtect.bak"));
                     }
                 }
             }
+            /* SimpleUpdate?
+                private void CheckForUpdates()
+                {
+                    // Loading the version.txt file
+                    WebClient client = new WebClient();
+                    string versionUrl = "https://github.com/HardyHuangLie/KebabiTool/raw/main/version.txt";  //edit link
+                    string versionString = client.DownloadString(versionUrl);
+
+                    // Parsing version number and download URL from a file
+                    string[] parts = versionString.Split(',');
+                    Version version = new Version(parts[0]);
+                    string downloadUrl = parts[1];
+
+                    // Getting the version number of the currently installed program
+                    Version currentVersion = new Version(Application.ProductVersion);
+
+                    // Comparing the version with a specified version number in a string
+                    if (version > currentVersion)
+                    {
+                        // Update available
+                        DialogResult result = System.Windows.Forms.MessageBox.Show("An update is available. Do you want to download and install it?",
+                            "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            // Загрузка обновленного файла
+                            client.DownloadFile(downloadUrl, "new.exe");
+
+                            // Тот самый костыль. Который работает всегда xD
+                            // Do not touch xD
+                            Process p = new Process();
+                            p.StartInfo.FileName = "cmd.exe";
+                            p.StartInfo.Arguments = $"/c timeout 1 & taskkill /F /IM \"{Application.ProductName}.exe\" & timeout 1 & ren \"{Application.ProductName}.exe\" old.exe & ren new.exe \"{Application.ProductName}.exe\" & start \"\" \"{Application.ProductName}.exe\"";
+                            p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                            p.StartInfo.CreateNoWindow = true;
+                            p.Start();
+                            Application.Exit();
+                        }
+                        else
+                        {
+                            // выбрали не загружать обновление
+                            // chose not to download the update
+                            return;
+                        }
+                    }
+                    else
+                    {
+                       // Update not available
+                        // System.Windows.Forms.MessageBox.Show("You have the latest version installed.", "Update not available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                    */
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);

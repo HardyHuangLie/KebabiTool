@@ -283,6 +283,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Languages\pt-PT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Languages\ru.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="CreatShortCut">Создать ярлык на рабочем столе</sys:String>
+    <sys:String x:Key="Start">Начать игру</sys:String>
+    <sys:String x:Key="Null">Нет</sys:String>
+    <sys:String x:Key="FailMsg1">Ошибка запуска процесса GenshinImpact, пожалуйста, уберите защиту и перезапустите игру.</sys:String>
+    <sys:String x:Key="FailMsg2">Ошибка изменения, не удалось записать в память</sys:String>
+    <sys:String x:Key="Close">Закрыть игру</sys:String>
+    <sys:String x:Key="FailMsg3">Не удалось создать ярлык</sys:String>
+    <sys:String x:Key="CloseProtect">Закрыть защиту</sys:String>
+    <sys:String x:Key="FailMsg4">Не существует, пожалуйста, запустите injector.exe хотя бы один раз.</sys:String>
+    <sys:String x:Key="FailMsg5">Игра не найдена</sys:String>
+    <sys:String x:Key="FailMsg6">Игра уже запущена, пожалуйста, закройте игру перед продолжением.</sys:String>
+</ResourceDictionary>

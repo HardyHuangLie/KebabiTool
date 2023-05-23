@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="CreatShortCut">建立桌面捷徑</sys:String>
+    <sys:String x:Key="Start">開始遊戲</sys:String>
+    <sys:String x:Key="Null">無</sys:String>
+    <sys:String x:Key="FailMsg1">開啟GenshinImpact程序失敗,請勾選關閉保護,重新啟動遊戲</sys:String>
+    <sys:String x:Key="FailMsg2">修改失敗,無法寫入內存</sys:String>
+    <sys:String x:Key="Close">關閉遊戲</sys:String>
+    <sys:String x:Key="FailMsg3">建立快捷失敗</sys:String>
+    <sys:String x:Key="CloseProtect">關閉保護</sys:String>
+    <sys:String x:Key="FailMsg4">不存在,請先執行一次injector.exe</sys:String>
+    <sys:String x:Key="FailMsg5">找不到遊戲</sys:String>
+    <sys:String x:Key="FailMsg6">遊戲正在運行,請先關閉遊戲</sys:String>
+</ResourceDictionary>

@@ -386,54 +386,23 @@ namespace Kebabi
                 Application.Current.Shutdown();
             }
         }
-
+        string GenshinPath = null;
         private void Close_Protect_Checked(object sender, RoutedEventArgs e)
         {
-            Save();
             try
             {
-                string filePath = "cfg.ini";
-                string line = null;
-                string GenshinPath = null;
-                if (!File.Exists(filePath))
-                {
-                    MessageBox.Show(filePath + resources.FailMsg4);
-                    return;
-                }
-                using (StreamReader reader = new StreamReader(filePath))
-                {
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        if (line.StartsWith("GenshinPath"))
-                        {
-                            string[] parts = line.Split('=');
-                            GenshinPath = parts[1].Trim();
-                            break;
-                        }
-                    }
-                }
-                if (!File.Exists(GenshinPath))
-                {
-                    MessageBox.Show(filePath + resources.FailMsg5);
-                    return;
-                }
+                Save();
+                GetGamePath();
                 if (GenshinPath != null)
                 {
-                    string path = System.IO.Path.GetDirectoryName(GenshinPath);
-                    if (File.Exists(System.IO.Path.Combine(path ,"mhyprot3.Sys")))
+                    Save();
+                    GetGamePath();
+                    if (GenshinPath != null)
                     {
-                        File.Move(System.IO.Path.Combine(path , "mhyprot3.Sys"), System.IO.Path.Combine(path ,"mhyprot3.bak"));
-                        File.Delete(System.IO.Path.Combine(path, "mhyprot3.Sys"));
-                    }
-                    if (File.Exists(System.IO.Path.Combine(path,"mhypbase.dll")))
-                    {
-                        File.Move(System.IO.Path.Combine(path, "mhypbase.dll"), System.IO.Path.Combine(path , "mhypbase.bak"));
-                        File.Delete(System.IO.Path.Combine(path, "mhypbase.dll"));
-                    }
-                    if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.Sys")))
-                    {
-                        File.Move(System.IO.Path.Combine(path, "HoYoKProtect.Sys"), System.IO.Path.Combine(path, "HoYoKProtect.bak"));
-                        File.Delete(System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
+                        for (int i = 0; i < orginal.Length; i++)
+                        {
+                            ChangeName(orginal[i] , changed[i] );
+                        }
                     }
                 }
             }catch(Exception ex)
@@ -441,60 +410,69 @@ namespace Kebabi
                 MessageBox.Show(ex.Message);
             }
         }
-
+        string[] orginal = { " mhyprot3.Sys", "mhypbase.dll", "HoYoKProtect.Sys" };
+        string[] changed = { "mhyprot3.bak", "mhypbase.bak", "HoYoKProtect.bak" };
         private void Close_Protect_Unchecked(object sender, RoutedEventArgs e)
         {
-            Save();
             try
             {
-                string filePath = "cfg.ini";
-                string line = null;
-                string GenshinPath = null;
-                if (!File.Exists(filePath))
-                {
-                    MessageBox.Show(filePath + resources.FailMsg4);
-                    return;
-                }
-                using (StreamReader reader = new StreamReader(filePath))
-                {
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        if (line.StartsWith("GenshinPath"))
-                        {
-                            string[] parts = line.Split('=');
-                            GenshinPath = parts[1].Trim();
-                            break;
-                        }
-                    }
-                }
-                if (!File.Exists(GenshinPath))
-                {
-                    MessageBox.Show(filePath + resources.FailMsg5);
-                    return;
-                }
+                Save();
+                GetGamePath();
                 if (GenshinPath != null)
                 {
-                    string path = System.IO.Path.GetDirectoryName(GenshinPath);
-                    if (File.Exists(System.IO.Path.Combine(path, "mhyprot3.bak")))
+                    for(int i = 0; i < orginal.Length; i++)
                     {
-                        File.Move(System.IO.Path.Combine(path, "mhyprot3.bak"), System.IO.Path.Combine(path, "mhyprot3.Sys"));
-                        File.Delete(System.IO.Path.Combine(path, "mhyprot3.bak"));
-                    }
-                    if (File.Exists(System.IO.Path.Combine(path, "mhypbase.bak")))
-                    {
-                        File.Move(System.IO.Path.Combine(path, "mhypbase.bak"), System.IO.Path.Combine(path, "mhypbase.dll"));
-                        File.Delete(System.IO.Path.Combine(path, "mhypbase.bak"));
-                    }
-                    if (File.Exists(System.IO.Path.Combine(path, "HoYoKProtect.bak")))
-                    {
-                        File.Move(System.IO.Path.Combine(path, "HoYoKProtect.bak"), System.IO.Path.Combine(path, "HoYoKProtect.Sys"));
-                        File.Delete(System.IO.Path.Combine(path, "HoYoKProtect.bak"));
+                        ChangeName(changed[i], orginal[i]);
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        void GetGamePath()
+        {
+            string filePath = "cfg.ini";
+            string line = null;
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show(filePath + resources.FailMsg4);
+                return;
+            }
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (line.StartsWith("GenshinPath"))
+                    {
+                        string[] parts = line.Split('=');
+                        GenshinPath = parts[1].Trim();
+                        break;
+                    }
+                }
+            }
+            if (!File.Exists(GenshinPath))
+            {
+                MessageBox.Show(filePath + resources.FailMsg5);
+                return;
+            }
+        }
+        void ChangeName(string original,string changed)
+        {
+            string path = System.IO.Path.GetDirectoryName(GenshinPath);
+            if (File.Exists(System.IO.Path.Combine(path, changed)))
+            {
+                if (File.Exists(System.IO.Path.Combine(path, original)))
+                {
+                    File.Delete(System.IO.Path.Combine(path, original));
+                }
+                return;
+            }
+            if (File.Exists(System.IO.Path.Combine(path, original)))
+            {
+                File.Move(System.IO.Path.Combine(path, original), System.IO.Path.Combine(path, changed));
+                File.Delete(System.IO.Path.Combine(path, original));
             }
         }
     }

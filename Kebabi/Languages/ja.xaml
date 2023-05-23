@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="CreatShortCut">デスクトップショートカットを作成</sys:String>
+    <sys:String x:Key="Start">ゲームを開始</sys:String>
+    <sys:String x:Key="Null">なし</sys:String>
+    <sys:String x:Key="FailMsg1">GenshinImpactアプリを開けませんでした。保護を解除して、ゲームを再起動してください。</sys:String>
+    <sys:String x:Key="FailMsg2">変更に失敗しました。メモリに書き込めませんでした。</sys:String>
+    <sys:String x:Key="Close">ゲームを終了</sys:String>
+    <sys:String x:Key="FailMsg3">ショートカットの作成に失敗しました</sys:String>
+    <sys:String x:Key="CloseProtect">保護を解除</sys:String>
+    <sys:String x:Key="FailMsg4">存在しません。最初にinjector.exeを実行してください。</sys:String>
+    <sys:String x:Key="FailMsg5">ゲームが見つかりません</sys:String>
+    <sys:String x:Key="FailMsg6">ゲームが実行中です。先にゲームを終了してください</sys:String>
+</ResourceDictionary>

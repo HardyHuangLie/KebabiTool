@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="CreatShortCut">Create desktop shortcut</sys:String>
+    <sys:String x:Key="Start">Start game</sys:String>
+    <sys:String x:Key="Null">None</sys:String>
+    <sys:String x:Key="FailMsg1">Failed to start GenshinImpact program. Please check the close protection option and restart the game.</sys:String>
+    <sys:String x:Key="FailMsg2">Failed to modify. Unable to write to memory.</sys:String>
+    <sys:String x:Key="Close">Close game</sys:String>
+    <sys:String x:Key="FailMsg3">Failed to create shortcut</sys:String>
+    <sys:String x:Key="CloseProtect">Close protection</sys:String>
+    <sys:String x:Key="FailMsg4">Not found. Please run injector.exe once.</sys:String>
+    <sys:String x:Key="FailMsg5">Game not found</sys:String>
+    <sys:String x:Key="FailMsg6">The game is running. Please close the game first.</sys:String>
+</ResourceDictionary>
